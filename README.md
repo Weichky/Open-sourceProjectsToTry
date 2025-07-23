@@ -111,9 +111,9 @@ Open-source projects from GitHub(or wherever) I plan to explore or experiment wi
 
 [c/c++ interview](https://github.com/huihut/interview): 📚 C/C++ 技术面试基础知识总结，包括语言、程序库、数据结构、算法、系统、网络、链接装载库等知识及面试经验、招聘、内推等信息。
 
-[leetcode-master](https://github.com/youngyangyang04/leetcode-master)《代码随想录》LeetCode 刷题攻略：200道经典题目刷题顺序。
+[leetcode-master](https://github.com/youngyangyang04/leetcode-master): 《代码随想录》LeetCode 刷题攻略：200道经典题目刷题顺序。
 
-[kama-DesignPattern](https://github.com/youngyangyang04/kama-DesignPattern?tab=readme-ov-file)卡码网-23种设计模式精讲。
+[kama-DesignPattern](https://github.com/youngyangyang04/kama-DesignPattern?tab=readme-ov-file): 卡码网-23种设计模式精讲。
 
 [all-rl-algorithms](https://github.com/FareedKhan-dev/all-rl-algorithms)：一站式学习强化学习算法的开源宝库。
 18种经典强化学习算法实现，覆盖从基础到前沿；配套Jupyter Notebook，交互式学习，边学边改；简洁易懂的代码，零基础也能轻松上手。
