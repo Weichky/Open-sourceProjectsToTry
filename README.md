@@ -1,4 +1,4 @@
-# Open-sourceProjectsToTry
+# Open-source Projects You Could Try
 Open-source projects from GitHub(or wherever) I plan to explore or experiment with.
 
 仅供参考，有一些可能不好用，但总有好用的，可以启发思路。
