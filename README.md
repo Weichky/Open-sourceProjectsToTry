@@ -4,6 +4,14 @@ Open-source projects from GitHub(or wherever) I plan to explore or experiment wi
 仅供参考，有一些可能不好用，但总有好用的，可以启发思路。
 
 ## 科研工具类
+[MatterViz](https://github.com/janosh/matterviz)：面向材料科学的交互式可视化工具箱，助力周期表、3D晶体结构及分子动态的深入理解。
+- 多维交互：周期表热力图、3D晶体结构、原子模型、核结构、散点图与直方图，涵盖材料科学核心数据表现形式  
+- VSCode 扩展：支持 CIF、POSCAR、XYZ、TRAJ、HDF5 等多种文件格式，右键菜单及快捷键一键渲染，方便集成研发流程  
+- 开发中但功能完善，适合科研人员和开发者探索材料属性的内在规律与周期性特征  
+- 基于现代前端技术栈（Svelte、three.js、d3），兼顾性能与交互体验，具备良好扩展性与社区潜力  
+- 深层认知：结合元素性质周期性与动态轨迹，助力材料科学从数据到本质的量化与可视化分析  
+长期价值在于为材料科学研究提供一套可视化方法论框架，提升科研效率和跨学科协作能力。适合关注材料设计、计算化学与数据可视化的专业人士。
+
 [colors](https://github.com/lcpmgh/colors): 学术期刊配色推荐器，为科研绘图提供专业配色方案。
 收录200+顶刊配色方案，涵盖Science、Nature等；支持颜色透明度调节，满足多样化绘图需求；提供云端访问与本地运行双重选择。
 
@@ -26,8 +34,34 @@ Open-source projects from GitHub(or wherever) I plan to explore or experiment wi
 拥有暴躁个性的AI教授，让学术阅读充满趣味；支持语音交互，解放双手；一键处理PDF论文，自动翻译并结构化内容。
 
 ## 实用工具类
+[Process Interactive Kill（pik）](https://github.com/jacek-kurlit/pik)：一款基于 Rust 的命令行交互式进程搜索与终止工具，兼具灵活性与高效性，适合开发者和系统管理员精细化管理进程。
+- 支持模糊搜索进程，关键词包含：
+  - 进程名（直接输入，如 firefox）
+  - 命令路径（以 '/' 前缀，如 /firefox）
+  - 启动参数（以 '-' 前缀，如 -foo，需加 -- 传递）
+  - 监听端口（以 ':' 前缀，如 :8080）
+  - 全局匹配（以 '~' 前缀，如 ~firefox）
+  - 精确进程 ID（以 '!' 前缀，如 !1234）
+  - 进程家族（父进程及子进程，以 '@' 前缀，如 @1234）
+- 结果实时交互式筛选，选中目标进程后可直接用 Ctrl + X 杀死，提升操作效率
+- 跨平台设计，Linux、macOS、Windows 理论支持，社区可参与测试与反馈，开源MIT许可
+- 多渠道安装支持：Linux 发行版包管理器、Rust cargo、dra 及预编译二进制包
+- 配置灵活，支持 config.toml 文件和命令行参数双重配置，满足个性化需求
+- 当前仍在开发中，持续迭代完善中，欢迎社区贡献和测试
+pik 不仅是 pkill 的交互升级，更通过多维度模糊匹配和家族进程操作，极大提升了进程管理的精准度和友好度，适合复杂场景下多任务高效运维。
+
 [GitSummarize](https://github.com/antarixxx/gitsummarize)：为任何GitHub仓库生成世界级的精美文档。
 瞬间生成系统级架构概览；提取业务逻辑与规则，清晰呈现代码结构；支持交互式文档，帮助快速上手复杂代码库。
+
+[git-quick-stats](https://github.com/git-quick-stats/git-quick-stats)：高效提取 Git 仓库统计数据。
+- 一站式访问提交记录、贡献者、分支历史等多维度统计，突破繁杂 git 命令的认知壁垒。  
+- 支持交互式菜单和丰富命令行参数，满足不同使用习惯与自动化需求。  
+- 详尽统计选项涵盖时间（年、月、周、日、小时）、作者、分支、时区等维度，助力深度代码分析。  
+- 灵活配置环境变量控制时间范围、输出格式（CSV/JSON）、排除路径及合并提交视图，提升统计精准度。  
+- 跨平台支持 Debian、Ubuntu、macOS（Homebrew）、Windows（Cygwin/WSL）及 Docker，部署便捷。  
+- 丰富的贡献者建议、代码审查提示，促进团队协作与代码质量提升。  
+- MIT 开源协议，文档规范且持续更新，适合长期项目维护与数据驱动决策。  
+通过系统化统计方法，git-quick-stats帮助开发者挖掘代码库背后的贡献规律与协作趋势，实现更科学的版本管理和团队管理。
 
 [yamlresume](https://github.com/yamlresume/yamlresume)：用代码管理简历，让简历创作变得轻松又有趣。
 用YAML格式编写简历，结构清晰易读；自动生成专业PDF，支持多种模板；开源免费，无供应商锁定。
@@ -47,11 +81,30 @@ Open-source projects from GitHub(or wherever) I plan to explore or experiment wi
 [Moodiary](https://github.com/ZhuJHua/moodiary)：一个全开源的跨平台日记应用，用Flutter和Rust编写。它能帮你安全地记录和管理日记，解决隐私和数据安全问题。
 支持多种文本编辑格式（如Markdown、富文本）；提供强大的数据安全功能，支持密码和生物识别解锁；支持多媒体附件，可添加图片、音频、视频等。
 
+[Docling Parse](https://github.com/docling-project/docling-parse)：专注于从程序化 PDF 中高效提取文本、路径及位图资源的轻量级工具包。  
+- 支持字符、单词及行级别文本坐标输出，精准定位文本内容，方便深度版面分析与可视化
+- 同时提取路径和位图图像，满足复杂文档结构解析需求  
+- 内置可交互式可视化脚本，便于快速验证与展示解析效果  
+- 性能显著提升，最新版本解析速度较初版快 5-10 倍，适合大规模文档处理  
+- Python 包即装即用，支持命令行和编程接口，灵活集成到多种工作流  
+- 完全开源，MIT 许可，社区活跃，持续更新与优化，便于二次开发和创新  
+- 适合科研、文档数字化、信息抽取等多场景应用，助力文档数据智能化转型  
+基于程序化 PDF 结构，精细提取多层级文本单元与图形元素，融合性能优化与可视化，推动 PDF 内容的结构化理解与应用扩展。
+
 ***~~（ps: 实用工具一定要实用~~***
 [Mystical_ps](https://github.com/denismm/mystical_ps)：将编程语言变成魔法符咒的奇妙项目。
 将PostScript代码转化为视觉化的魔法圈，让代码更直观；提供丰富的符号系统，支持自定义符号；代码布局优化，避免视觉冲突，提升可读性。
 
 ## MCP类
+[ScrapeGraphAI](https://github.com/ScrapeGraphAI/Scrapegraph-ai)：基于大型语言模型与图逻辑的Python爬虫库，实现“一次爬取，多次利用”的高效数据提取方案。
+- 利用LLM（如OpenAI、Ollama等）和图结构构建灵活爬取管线，支持网页及本地文档（HTML、Markdown、JSON、XML等）  
+- 多种爬取模式：单页智能提取（SmartScraperGraph）、多页搜索结果抓取（SearchGraph）、音频生成（SpeechGraph）、自动生成Python脚本（ScriptCreatorGraph）等，满足复杂场景需求  
+- 完善集成生态：支持Python、Node.js SDK，兼容Langchain、Llama Index、Zapier、Bubble等主流低代码/无代码平台，极大降低二次开发门槛  
+- 简单易用：5行代码快速上手，官方推荐虚拟环境安装，Playwright支持动态网页内容抓取  
+- 透明开源，MIT协议授权，活跃社区持续更新，20.5k⭐️，1700+ Fork，适合科研、数据分析、自动化工程长期参考与实践  
+- 详尽文档与示例代码覆盖多语言接口，支持多模型并行调用，灵活切换本地或云端LLM，强调方法论与长远适用性  
+ScrapeGraphAI通过“语言理解+图结构”策略，将爬虫从传统规则驱动转向智能语义驱动，极大提升数据清洗和结构化效率，是下一代智能数据抽取范式的典范。
+
 [Chrome MCP Server](https://github.com/hangwin/mcp-chrome)：将你的Chrome浏览器变成智能助手，让AI掌控浏览器，实现复杂自动化、内容分析和语义搜索。
 直接使用日常Chrome浏览器，无需重新登录；纯本地MCP服务器，确保用户隐私；支持20+工具，包括截图、网络监控、互动操作等。
 
@@ -106,6 +159,30 @@ Open-source projects from GitHub(or wherever) I plan to explore or experiment wi
 
 [Autumn](https://github.com/useautumn/autumn)：开源的Stripe与应用之间的中间层，用几行代码就能实现任意定价模型。
 支持订阅、信用系统、按用量计费等多种模式；无需处理复杂的webhook、升级/降级、取消或支付失败问题；提供云服务和自托管两种部署方式。
+
+[AI Doc Gen](https://github.com/divar-ir/ai-doc-gen)：多智能体驱动的代码库自动文档生成系统，提升代码理解与开发者入门效率。
+- 多智能体架构：专门的AI agent负责代码结构、数据流、依赖关系、请求流及API分析，确保文档精准全面。  
+- 自动文档生成：支持自动创建结构化README，章节可灵活配置，保持文档始终更新且易维护。  
+- GitLab集成：无缝接入GitLab，支持自动分析与合并请求创建，优化团队协作流程。  
+- 并发处理：多agent并行执行，加速代码分析与文档生成，适应大型项目需求。  
+- 多LLM兼容：兼容OpenAI、OpenRouter及本地模型等多种LLM API，灵活选择最佳模型。  
+- 配置灵活：基于YAML配置文件，支持环境变量覆盖，满足不同项目定制需求。  
+- 可观测性：内置OpenTelemetry和Langfuse监控，实时追踪分析过程，保障系统稳定性。  
+- 技术栈前沿：采用Python 3.13与pydantic-ai进行agent编排，结合GitPython和python-gitlab实现仓库操作。  
+从根本上解决文档“腐烂”问题，推动文档与代码同步进化，实现长期维护价值最大化。适合追求高效、自动化文档管理的开发团队及开源项目。
+
+[Claude Code Agent Farm](https://github.com/Dicklesworthstone/claude_code_agent_farm)：多Agent协同提升代码质量的自动化框架
+- 并行运行20+ Claude Code agents，最高支持50个，极大加速大规模代码库的自动化改进  
+- 三大工作流支持：传统Bug修复、系统化最佳实践落地、多Agent协同复杂开发  
+- 先进锁机制保障多Agent无冲突作业，自动管理任务分配和状态同步，避免重复和冲突  
+- 涵盖34种主流技术栈（Next.js、Python、Rust、Go、Java、Flutter等），配置丰富，适配广泛项目  
+- 实时监控面板直观显示Agent状态、上下文使用率、心跳频率及错误信息，支持tmux多视图操作  
+- 自动恢复与上下文管理：Agent异常自动重启，自动清理上下文防止状态溢出，支持一键广播清理命令  
+- 配套24套环境搭建脚本，覆盖从前端、后端到DevOps及数据工程，极大简化开发环境配置  
+- 细粒度Git集成：支持定制分支、增量提交与详尽HTML运行报告，保证代码变更透明且易追踪  
+- 灵活JSON配置系统，支持变量替换与动态块大小调整，满足不同项目和团队的个性化需求  
+- 安全稳健：自动备份与恢复Claude设置，文件锁定防止并发冲突，异常清理确保环境干净  
+该框架不仅是多Agent任务调度工具，更是面向大规模代码库的智能协同开发平台，充分利用AI并行能力与严格的作业协调机制，解决传统自动化工具难以兼顾的代码冲突与任务重复问题，极大提高代码质量和团队开发效率，具备长期演进和多场景复用价值。
 
 ## 教程类
 
@@ -219,5 +296,14 @@ Open-source projects from GitHub(or wherever) I plan to explore or experiment wi
 [ContextGem](https://github.com/shcherbak-ai/contextgem)：让从文档中提取结构化数据变得轻而易举的LLM框架。
 自动化动态提示，无需手动编写复杂代码；提供强大的数据建模和验证功能，减少开发时间；支持多语言输入输出，无需额外提示。
 
+
 [MoviiGen 1.1](https://github.com/ZulutionAI/MoviiGen1.1)：打造电影级画质的视频生成模型，让视频创作更专业、更高效。
 超越竞品的电影美学表现，尤其在氛围营造、镜头运动和细节保留上表现卓越；清晰度提升14.6%，真实感增强4.3%，适合高保真场景；支持720P和1080P分辨率，保持高质量输出。
+
+[seed-Prover](https://github.com/ByteDance-Seed/Seed-Prover)，聚焦数学自动定理证明的前沿突破：
+- Seed-Prover 是团队参与 IMO 2025 国际数学奥林匹克的官方系统，成功解决 4 道难题（P2 几何、P3 数论、P4 数论、P5 组合/代数），展示了 AI 在严谨数学证明中的实用性和高效性。  
+- P2 题几何证明仅用 2 秒生成并验证，P3 和 P4 题的数论证明分别用 Lean 形式化语言完成，代码行数达 2000 和 4000 行，体现深度形式化能力。  
+- P5 题的证明创新性强，算法生成的证明与人类传统解法存在差异，体现 AI 方法在数学创新上的潜力。  
+- 另有 Delta-Prover 项目，专注于测试时生成形式证明的技术研究，推动自动化数学系统的性能极限。  
+- 全部证明基于 Lean v4.14.0，采用 Apache-2.0 开源许可，方便社区复用与二次开发。  
+Seed-Prover 不仅是数学 AI 形式化证明的里程碑，也为数学研究方法论带来新的视角，推动数学与人工智能深度融合。长期来看，这类工具将成为数学家、科研人员的强力助手，实现复杂数学问题的自动验证和创新发现。
